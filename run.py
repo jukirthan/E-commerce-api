@@ -6,7 +6,7 @@ app = create_app()
 CORS(app)
 
 with app.app_context():
-    from app.extensions import db
+    from extensions import db
     db.create_all()
 
 if __name__ == "__main__":
